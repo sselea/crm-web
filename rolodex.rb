@@ -1,6 +1,7 @@
 
 #This class is necessary to store all the contact 
 class Rolodex
+	attr_accessor :contact_array
 
 	def initialize 
 		@contact_array = []
