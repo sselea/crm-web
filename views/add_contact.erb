@@ -1,9 +1,29 @@
 <h1> Add Contact </h1>
 
 <form action="/contacts" method="post">
-  <input type="text" name="first_name">
+<div id="container">
+  <div class="inputs">
+  	<label for="first_name">First Name:</label>
+  	<input id="first_name" type="text" name="first_name">
+  </div>
+
+  <div class="inputs">
+  <label for="last_name">Last Name:</label>
   <input type="text" name="last_name">
+	</div>
+
+	<div class="inputs">
+	<label for="email">Email:</label>
   <input type="text" name="email">
+  </div>
+
+  <div class="inputs">
+  <label for="note">Note:</label>
   <input type="text" name="note">
+  </div>
+
+  <div class="inputs">
   <input type="submit" name="Submit">
+  </div>
+</div>
 </form>
