@@ -1,35 +1,31 @@
 html
-	{
-		height:100%;
-		width:100%;
-	}
+{
+	background-color:black;
+}
 
 header
 	{
 		background-color:black;
-		margin-bottom:2em;
 		overflow:auto;
-		border-bottom:3px double orange;
+		border-bottom:6px double orange;
 	}
-
 
 body
 	{
-	height:100%;
 	background-color:#B8B8B8;
 	font-family: 'Quattrocento'
 	}
 
 nav
  	{
- 		width:50%;
+ 		/*width:50%;*/
  		text-align:left;
  	}
 
 nav ul 
 	{
-		display:block;
 		list-style: none;
+		padding-left:0;
 	}
 
 nav li
@@ -40,21 +36,21 @@ nav li
 .nav_link
 
 	{
-		font-size:1.15em;
+		font-size:1em;
 		color:grey;
 		padding:.25em;	
 		text-decoration: none;
-		border-left:1px solid grey;
+		margin: 0 2em;
+		/*border-left:2px solid grey;*/
 	}
 
 #last_link
 	{
-		border-right:1px solid grey;
+		/*border-right:2px solid grey;*/
 	}
 
 a 
 	{
-		-webkit-transition: background-color 1s;
 		-webkit-transition: color .5s;
 	}
 
@@ -62,27 +58,30 @@ a
 a:hover 
 	{
 		color: white;
-		background-color:grey;
 	}
 
 main
 
-	{
+	{	
 		width:100%;
-		height:100%%;
 		clear:both;
 		text-align:center;
+		background-color:black;
+		height:850px;
+		color:grey;
 	}
 
 
-main h1
+main h3
 
 	{
 		border-top: 2px ridge orange;
 		border-bottom:2px ridge orange;
 		width:25%;
 		margin:auto;
-		color:black;
+		margin-top:2em;
+		margin-bottom:2em;
+		color:white;
 	}
 
 
@@ -90,12 +89,8 @@ form
 
 	{
 		display: table;
-		width:40%;
-		height:400px;
 		margin:auto;
-		margin-top:5em;
 		text-align:center;
-		-webkit-box-shadow:0px 0px 5px 1px #666;
 	}
 
 #container
@@ -114,6 +109,7 @@ form
 		display:inline-block;
 		text-align: center;
 		width:50%%;
+		margin-bottom:2em;
 	}
 
 .inputs label 
@@ -128,10 +124,14 @@ form
 footer
 
 	{
+		position:fixed;
+		left:0px;
+		bottom:0px;
+		width:100%;
 		background-color:black;
 		text-align:center;
-		/*height:7%;*/
-		border-top: 4px ridge orange;	
+		border-top: 6px double orange;	
+
 	}
 
 	footer p 
@@ -143,9 +143,15 @@ footer
 		padding:.5em;
 	}
 
-	img.resize
+	img
 
 	{
 		width:100%;
 		height:auto;
+		border-bottom:6px double orange;
+	}
+
+	ul
+	{
+		list-style:none;
 	}

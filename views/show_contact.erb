@@ -1,1 +1,13 @@
-<h1> Show Contact </h1>
+<h3> Show Contact </h3>
+
+<%# @contact = Contact.new("Johnny","Bravo","johnny@bitmakerlabs.com","Rockstar") %>
+
+<h1><%= @contact.first_name %> <%= @contact.last_name %></h1>
+<p><strong>Email:</strong> <%= @contact.email %></p>
+<p><strong>Note:</strong></p>
+<p><%= @contact.note %></p>
+
+<form action="/contacts/<%= @contact.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button type="submit">Delete Contact</button>
+</form>

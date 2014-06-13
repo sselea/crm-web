@@ -35,6 +35,7 @@ class Rolodex
 					return i
 				end
 			end
+			return false 
 	end
 
 	def modify_attr(an_id,an_attribute,a_new_value)
