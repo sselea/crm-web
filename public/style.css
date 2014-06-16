@@ -1,3 +1,8 @@
+*
+{
+	box-sizing: border-box;
+}
+
 html
 {
 	background-color:black;
@@ -8,11 +13,13 @@ header
 		background-color:black;
 		overflow:auto;
 		border-bottom:6px double orange;
+
 	}
 
 body
 	{
-	background-color:#B8B8B8;
+
+	background-color:black;
 	font-family: 'Quattrocento'
 	}
 
@@ -69,6 +76,7 @@ main
 		background-color:black;
 		height:850px;
 		color:grey;
+		overflow:auto;
 	}
 
 
@@ -84,6 +92,44 @@ main h3
 		color:white;
 	}
 
+main ul
+
+{
+	width:50%;
+	float:left;
+	text-align:center;
+
+}
+
+
+.contact_container
+	{
+		margin:2em;
+		overflow:auto;
+	}
+
+.contact_container ul
+	{
+		width:20%;
+		padding-right:5em;
+		padding-top:1em;
+		margin-left:38em;
+		
+	}
+
+	.contact_container li
+	{
+		/*border-bottom:1px solid orange;*/
+	}
+
+	.contact_buttons
+	{
+		float:left;
+		padding-top:1.5em;
+		padding-left:2em;
+		/*margin-right:5em;*/
+	}
+
 
 form
 
@@ -93,7 +139,7 @@ form
 		text-align:center;
 	}
 
-#container
+.container
 
 {
 	background-color:black;
@@ -110,6 +156,7 @@ form
 		text-align: center;
 		width:50%%;
 		margin-bottom:2em;
+		margin-left:2em;
 	}
 
 .inputs label 
@@ -118,7 +165,8 @@ form
 	color:white;
 	display: inline-block;
 	width: 100px;
-	text-align: right;
+	text-align: left;
+	margin-right:5em;
 }
 
 footer
@@ -139,7 +187,7 @@ footer
 	{
 		color:grey;
 		display:inline-block;
-		margin:1em 5em;
+		margin:1em 12em;
 		padding:.5em;
 	}
 
@@ -154,4 +202,26 @@ footer
 	ul
 	{
 		list-style:none;
+	}
+
+	input, text area
+	{
+		padding:.25em;
+		background-color:#B2B2B2;
+		border-radius:2px;
+		border:1px solid orange;
+	}
+
+	button
+	{
+		background-color:#B2B2B2;
+		border-radius:4px;
+		border:2px solid black;
+		padding:.5em;
+	}
+
+	#Add_Contact
+	{
+		position:relative;
+		left:90px;
 	}

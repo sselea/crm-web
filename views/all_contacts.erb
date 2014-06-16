@@ -1,7 +1,28 @@
-<h1> All Contacts </h1>
+<h3> All Contacts </h3>
 
-<ul>
+
 <% @contacts.each do |contact| %>
-  <li><%= contact.first_name %> <%= contact.last_name %></li>
+<div class="contact_container">
+	<ul>
+	  <li><%= contact.first_name %> <%= contact.last_name %> </li>
+	  <li>Email: <%=contact.email%> </li>
+	  <li>Note: <%=contact.note%> </li>
+	 </ul>
+	 <div class="contact_buttons">
+
+	 			<form action="/contacts/<%=contact.id%>/edit"method="get">
+	 			<button type="submit">Modify Contact</button>
+	 			</form>
+
+
+		 <!-- <a class="nav_link" id="last_link" href="/contacts/<%=contact.id%>/edit">
+				Modify Contact </a> -->
+
+				<form action="/contacts/<%= contact.id %>" method="post">
+			  <input type="hidden" name="_method" value="delete">
+			  <button type="submit">Delete Contact</button>
+			</form>
+		</div>
+  </div>
 <% end %>
-</ul>
+
